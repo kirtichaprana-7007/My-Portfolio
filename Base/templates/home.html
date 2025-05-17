@@ -1,0 +1,185 @@
+{% load static%}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>My portfolio</title>
+    <link rel="stylesheet" href="{%static 'css/style.css'%}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+
+<body>
+    
+
+            <nav id="navbar" class="flex s-around bg-color">
+                <div class="left-nav">
+                    <h2 class="t-white">Portfolio</h2>
+                </div>
+                <div class="right-nav">
+                <ul class="flex">
+                <li><a href="#home" class="t-white roboto">Home<i class="fa-solid fa-house"></i></a></li>
+                <li><a href="#about" class="t-white roboto">About<i class="fa-solid fa-user"></i></a></li>
+                <li><a href="#skills" class="t-white roboto">Skills<i class="fa-solid fa-code"></i></a></li>
+                <li><a href="#project" class="t-white roboto">Projects<i class="fas fa-project-diagram"></i></a></li>
+                <li><a href="#contact" class="t-white roboto">Contact<i class="fa-solid fa-rocket"></i></a></li>
+                </ul>
+                </div>
+            </nav>
+        
+            <!--home section-->
+            <section id="home" class="flex s-around sw-80 m-auto">
+                <div class="home-left flext items-center">
+                    <div class="home-content">
+                        <h6 class="popinss">Hi,i'm </h6>
+                        <h1 class="t-white">Kirti Chaprana</h1>
+                        <h4 class="popins">Software Engineer</h4>
+                        <a href="{%static 'images/resume.jpg'%}" target="_blank">
+                            <button class="btn popins">Resume</button>
+                        </a>
+                        <a class="btn live popinss" id="hireme" href="{% url 'contact' %}" target="_blank">lets talk</a>
+                    </div>
+                </div>
+                <div class="home-right flex s-center items-center">
+                    <div class="circle flex s-center items-center" id="mainImage">
+                        <img src="{%static 'images/mypic.png'%}">
+
+                    </div>
+                </div>
+            </section>
+
+<!--about section-->
+<section id="about">
+    <h1 class="t center my-2 t-white f-2">About<Menu></Menu></h1>
+    <div class="about-container flex s-around">
+        <div class ="about-left flex s-center items-center" id="aboutImage">
+            <img src="{%static 'images/about.png'%}">
+        </div>
+    
+    <div class="about-right flex">
+        <div class="about-content">
+            <h1 class="t-white m-b-1 popinss">Kirti Chaprana</h1>
+            <p class="t-white popins">An ambitious Full Stack Developer with strong expertise in developing scalable, high-performance web applications using Python, Django, JavaScript, HTML/CSS, and mySql Database. Experienced in building both front-end and back-end systems, with a keen focus on crafting seamless and intuitive user experiences guided by UI/UX design principles. 
+            <a href="btn" id="hireme" href="{% url 'contact'%}">Hire me</a>
+        </div>
+    </div>
+</div>
+</section>
+
+
+<!--skills section-->
+<section id="skills">
+    <h1 class="t-center my-2 t-white f-2">Skills</h1>
+    <div class="services-container flex s-around h-50">
+        <div class="skills-left flex s-center items-center" id="skillImage">
+            <img src="{%static 'images/skills.png' %}">
+        </div>
+        <div class="skills-right flex items-center">
+            <div class="skillss-container">
+                <div class="python bar p-relative"><span class="bar-content left t-white">Python</span><span
+                        class="bar-content right-skills t-white">70%</span></div>
+                <div class="html bar p-relative"><span class="bar-content left t-white">HTML</span><span
+                        class="bar-content right-skills t-white">90%</span></div>
+                <div class="css bar p-relative"><span class="bar-content left t-white">CSS</span><span
+                        class="bar-content right-skills t-white">90%</span></div>
+                <div class="js bar p-relative"><span class="bar-content left t-white">JavaScript</span><span
+                        class="bar-content right-skills t-white">70%</span></div>
+                <div class="c bar p-relative"><span class="bar-content left t-white">C</span><span
+                        class="bar-content right-skills t-white">60%</span></div>
+                <div class="mysql bar p-relative"><span class="bar-content left t-white">MySQL</span><span
+                        class="bar-content right-skills t-white">70%</span></div>        
+                <div class="figma bar p-relative"><span class="bar-content left t-white">Figma</span><span
+                        class="bar-content right-skills t-white">90%</span></div>
+            </div>
+       </div>
+    </div>
+</section>
+
+<!--project section-->
+<section id="Project">
+    <h1 class="t-center my-2 t-white f-2" Project></h1>
+    <div class="project-container flex s-center">
+        
+            <div class="project-item flex f-col s-center items-center">
+                <h1 class ="t-white popinss">Invoice System</h1>
+                <p class="t-white popinss">It is a web-based application developed using Django that allows users to create, manage, and track invoices. The system enables users to add clients, generate detailed invoices with itemized lists, apply taxes, and keep track of payment status. It also includes features for viewing and editing past invoices.</p>
+                <div class="button flex s-around">
+                    <a href="https://github.com/kirtichaprana-7007/Invoice-System" target="_blank"
+                    class="btn mx-1 m-top">GitHub</a>
+                </div>
+            </div>
+
+
+    <div class="project-container flex s-center">
+        <div class="project-item flex f-col s-center items-center">
+            <h1 class ="t-white popinss">Snake game</h1>
+            <p class="t-white popinss">It is a simple, interactive game built using HTML,CSS, and JavaScript. It features a classic snake that moves around the screen, eating food to grow longer while avoiding collisions with itself and the walls. The game is controlled using arrow keys, and players can track their score as they progress.</p>
+            <div class="button flex s-around">
+                <a href="https://github.com/kirtichaprana-7007/Snake-Game" target="_blank"
+                class="btn mx-1 m-top">GitHub</a>
+            </div>
+        </div>
+    <div class="project-item flex f-col s-center items-center">
+            <h1 class ="t-white popinss">Movie Ticket Booking System</h1>
+            <p class="t-white popinss">It is a console-based application developed in C/C++ that allows users to register, log in, view available movies, and book tickets. The system displays movie listings with showtimes, calculates the total ticket cost. It also allows users to view their booking history.</p>
+            <div class="button flex s-around">
+                <a href="https://github.com/kirtichaprana-7007/Movie-Ticket-Booking-System" target="_blank"
+                class="btn mx-1 m-top">GitHub</a>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+
+<!--contact me section-->
+<section id="Contact" class="m-b-1">
+    <h1 class="t-center my-2 t-white f-2">Contact Me</h1>
+    <div class ="Contact-container flex s-around items-center">
+        <div class="form" id="contactform">
+            <form method="post">
+                 {% csrf_token %}
+                <div class="name form-div">
+                    <input type="text" name="name" id="name" class="popinss" placeholder="Enter your name">
+                </div>
+                <div class="email form-div">
+                    <input type="email" name="email" id="" class="popinss" placeholder="Enter your email" required>
+                </div>
+                <div class="phone form-div">
+                    <input type="phone" name="number" id="" class="popinss" placeholder="Enter your ph no." required>
+                </div>
+                <div class="email form-div">
+                    <textarea name="content" id="textarea" cols="30" rows="10" class="popinss" placeholder="Enter your message"></textarea>
+                </div>
+                <button type="submit" class="btn popinss" id="submit">send</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<!--footer section-->
+<footer id="footer">
+    <ul class="flex s-center w-80 m-auto my-2 res">
+        <li><a href="#home" class="popinss">Home</a></li>
+        <li><a href="#about" class="popinss">About Me</a></li>
+        <li><a href="#skills" class="popinss">Skills</a></li>
+        <li><a href="#project" class="popinss">Project</a></li>
+    </ul>
+    <ul class="flex s-center w-80 font-awesome">
+        <a href="https://www.linkedin.com/in/kirti-chaprana-21b8a3289?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B8uOpwmdMRJCpTjn6522pyg%3D%3D" target="_blank">
+            <li><i class="fa-brands fa-linkedin-in"></i></li>
+        </a>
+        <a href="https://github.com/kirtichaprana-7007" target="_blank">
+            <li><i class="fa-brands fa-github"></i></li>
+        </a>
+       
+    </ul>
+    <p class="t-center my-2 popinss">copy;All Right Reseerver -<span class="copy-white popinss"></span></p>
+</footer>
+
+
+
+</body>
+
+</html>
